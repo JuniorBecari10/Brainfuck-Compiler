@@ -1,0 +1,50 @@
+Uma linguagem custom que compila para Brainfuck 
+
+Somente uma instrução por linha!
+O código gerado tbm gera uma linha por instrução! 
+
+O print printa o valor na tabela ascii do valor 
+
+Comandos (keywords):
+print <msg: str> or <cell: int>
+input <cell: int>
+moveptr <left or right>
+calc <+ or -> <cell: int> <value: int>
+loop <condition: expression> [
+if <condition: expression> { 
+
+] End Loop
+} End Condition 
+
+Loop 
+
+<condition: <cell: int> < = > < > <value:int>> [ Init Loop
+Ex:
+loop 2 > 5 [
+O valor da célula 2 deve ser maior que 5 para o loop continuar 
+
+] End Loop 
+
+E tem suporte para loops aninhados 
+
+Condições 
+
+
+<condition: <cell: int> < = > < > <value:int>> { Init Condition
+Ex:
+if 5 = 3 {
+O valor da célula 5 deve ser igual a 3 
+
+} End Condition 
+
+Dentro de um loop ou if, não deve ter um end sem ter um init dentro dele: 
+
+loop ... [ 
+
+if ... { 
+
+]
+} 
+
+Isso não pode acontecer. 
+Para o loop acabar antes do if terminar, o init deve estar dentro do if.
