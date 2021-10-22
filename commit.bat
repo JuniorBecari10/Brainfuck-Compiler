@@ -1,3 +1,5 @@
+@echo off
+
 set /p "name=Nome do Commit: "
 
 git add .
