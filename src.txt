@@ -1,3 +1,2 @@
-print Oi Abelha! Como você está?
-input 2
-moveptr right
+set 0 50
+print $0
