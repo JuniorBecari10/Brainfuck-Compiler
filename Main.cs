@@ -128,10 +128,12 @@ namespace main
                             {
                                 case "left":
                                     output.Add("<");
+                                    pc--;
                                 break;
                                 
                                 case "right":
                                     output.Add(">");
+                                    pc++;
                                 break;
                             }
                         break;
