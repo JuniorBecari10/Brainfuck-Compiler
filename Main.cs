@@ -123,7 +123,7 @@ namespace main
                             }
                             catch (Exception)
                             {
-                                Console.WriteLine("Error Compiling: Invalid Number in command input at line " + lineCount);
+                                Console.WriteLine("Error Compiling: Invalid number in command 'input' at line " + lineCount);
                             }
                         break;
                         
@@ -197,7 +197,7 @@ namespace main
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error: " + e.Message);
+                Console.WriteLine("Error while compiling: " + e.Message);
             }
             
             Console.ReadLine();
