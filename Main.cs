@@ -33,6 +33,8 @@ namespace main
                 foreach (string s in lines)
                 {
                     string[] split = s.Split(' ');
+                    //split[0] = s.Substring(1);
+                    split[1] = s.Substring(s.IndexOf(' ') + 1);
                     
                     // Add message
                     
@@ -93,7 +95,7 @@ namespace main
                 Console.WriteLine("Error: " + e.Message);
             }
             
-            //Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }

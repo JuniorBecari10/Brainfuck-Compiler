@@ -2,4 +2,4 @@ csc Main.cs
 
 Main
 
-exit
+rem exit
